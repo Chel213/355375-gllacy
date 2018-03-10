@@ -9,41 +9,64 @@
       <nav class="main-nav">
         <a class="logo"><img src="img/logo.svg" width="154" height="64" alt="logo gllacy shop"></a>
         <ul class="site-nav">
-          <li><a>Каталог</a>
-            <ul class="window menu">
-              <li><a>Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href=#>Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
+          <li class="site-nav-item"><a href="#">Каталог</a> 
+            <ul class="submenu-catalog">
+              <li class="submenu-catalog-item"><a class="novelty" href="#">Новинки</a></li>
+              <li class="submenu-catalog-item"><a href="catalog.html">Сливочное</a></li>
+              <li class="submenu-catalog-item"><a href=#>Щербеты</a></li>
+              <li class="submenu-catalog-item"><a href="#">Фруктовый лед</a></li>
+              <li class="submenu-catalog-item"><a href="#">Мелорин</a></li>
             </ul> 
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
+          <li class="site-nav-item"><a href="#">Доставка и оплата</a></li>
+          <li class="site-nav-item"><a href="#">О Компании</a></li>
         </ul>
       </nav>
       <section class="user-block">
-        <form action="#" method="GET">
-          <div class="window search">
+        <h3 class="visually-hidden">Пользовательский блок</h3>
+
+        <div class="window-search">
+          <form action="https://echo.htmlacademy.ru" method="GET">
             <input type="search" name="site-search" id="search" placeholder="Что ищем?">
-          </div>
-          <label for="search">поиск</label>
-        </form>
-        <span class="entry">Вход</span>
-        <form action="#" method="POST">
-          <div class="window login">
+          </form>
+        </div>
+        <label for="search">поиск</label> <!--Надо оборачивать в ссылку или кнопка???-->
+        
+        <a class="entry">Вход</a> <!--Надо добавлять href ???-->
+        <div class="window-login">
+          <form action="https://echo.htmlacademy.ru/" method="POST">
             <input type="email" name="user-email" id="email" placeholder="Электронная почта">
             <input type="password" name="user-password" placeholder="Пароль">
             <button type="submit">Войти</button>
-          </div>
-        </form>
-        <div class="cart">
-          <span class="state-cart">Пусто</span>
-            <!-- здесь будет таблица и форма -->
-          </div>
+          </form>
+          <a class="registration" href="#">Забыли пароль?</a>
+          <a class="registration" href="#">Новая регистрация</a>
+        </div>
+
+        <a class="cart" href="#">Пусто</a>
+        <div class="window-cart">
+          <table class="status-cart">
+            <tr class="item-cart"> <!--Удалить товар кнопка или ссылка ??? добавлять псевдоэлементом ???-->
+              <td class="img-cart"><img src="img/cream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+              <td class="name-cart"><a href="#">Пломбир с апельсиновым джемом</a></td>
+              <td class="mass-cart">1,5 кг х</td>
+              <td class="price-cart">200 руб</td>
+              <td class="sum-cart">300 руб.</td>
+            </tr>
+            <tr class="item-cart"> <!--Удалить товар кнопка или ссылка ??? добавлять псевдоэлементом ???-->
+              <td class="img-cart"><img src="img/cream-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <td class="name-cart"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+              <td class="mass-cart">1,5 кг х</td>
+              <td class="price-cart">300 руб</td>
+              <td class="sum-cart">450 руб.</td>
+            </tr>
+          </table>
+          <p class="total-cart">Итого: 750 руб.</p>
+          <a class="button checkout-cart" href="#">Оформить заказ</a>
+        </div>
         <div class="header-contact">
-          <p class="hours">с 10 до 20, ежедневно</p>
-          <p class="phone">8 812 450-25-25</p>
+          <p class="header-contact-hours">с 10 до 20, ежедневно</p>
+          <p class="header-contact-phone">8 812 450-25-25</p>
         </div>
       </section>
     </header>
@@ -84,47 +107,52 @@
       <!--Слайдер окончен-->
       <!--Банеры-->
       <section class="baners">
+        <h2 class="visually-hidden">Рекламные акции</h2>
         <section class="baner baner-left">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="button">Хочу варенье!</a>
+          <a class="button" href="#">Хочу варенье!</a>
         </section>
         <section class="baner baner-right">
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="button">Хочу шоколадки!</a>
+          <a class="button" href="#">Хочу шоколадки!</a>
         </section>
       </section>
-        <!--Цены-->
+        <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular">
           <li class="hit">
             <img src="img/cream-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="price">310</p>
             <p class="mass">/кг</p>
             <a class="name-cream" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="hit">
             <img src="img/cream-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
             <p class="price">380</p>
             <p class="mass">/кг</p>
             <a class="name-cream" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="hit">
             <img src="img/cream-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p class="price">355</p>
             <p class="mass">/кг</p>
             <a class="name-cream" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="hit">
             <img src="img/cream-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
             <p class="price">415</p>
             <p class="mass">/кг</p>
             <a class="name-cream" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
         <!--Особенности-->
         <section class="features">
-          <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+          <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
           <ul class="advantages">
             <li class="production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
             <li class="natural">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
@@ -133,38 +161,41 @@
           </ul>
         </section>
         <!--Блог-->
-        <div class="info">
+        <section class="info">
+          <h3 class="visually-hidden">Полезная информация</h3>
           <article class="blog">
+            <h3 class="visually-hidden">Новости блога</h3>
             <p class="title-blog">Новое в нашем блоге</p>
-            <p class="news-blog"><a href="#">10 способов сервировки
-                фруктовых щербетов к
-                столу</a></p>
+            <p class="news-blog"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
           </article>
           <section class="distribution">
+            <h3 class="visually-hidden">Полезная рассылка</h3>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-            <form action="#" method="POST" name="distribution">
+            <form action="https://echo.htmlacademy.ru/" method="POST" name="distribution">
               <input type="email" name="email-distribution" placeholder="Электронная почта">
               <button type="submit">Отправить</button>
             </form>
           </section>
-        </div>
+        </section>
         <!--Карта с контактами-->
         <section class="map">
-          <img src="#" width="" height="" alt="">       <!--указать атрибуты-->
+          <h3 class="visually-hidden">Наши контакты</h3>
+          <img src="img/map-contact.jpg" width="1200" height="640" alt="Карта проезда">
           <div class="contact">
             <p class="name-contact">Адрес главного офиса и офлайн-магазина:</p>
             <p class="addres">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
             <p class="name-contact">Для заказов по телефону:</p>
             <p class="phone">8 812 450-25-25</p>
             <p class="time">(с 10 до 20 ежедневно)</p>
-            <a class="button">Форма обратной связи</a>
+            <a class="button" href="#">Форма обратной связи</a>
           </div>
         </section>
         <!--Модальное окно-->
-        <section class="modal window"> 
+        <section class="modal window">
+          <h3 class="visually-hidden">Форма обратной связи</h3> 
           <p>Мы обязательно вам ответим!</p>
-          <span class="close">X</span>
-          <form action="#" method="POST">
+          <span class="close">Закрыть</span>
+          <form action="https://echo.htmlacademy.ru/" method="POST">
             <input type="text" name="name-feedback" placeholder="Как вас зовут?">
             <input type="email" name="email-feedback" placeholder="Ваша почта для ответа?">
             <textarea name="text-feedback" placeholder="Напишите что-нибудь"></textarea>
