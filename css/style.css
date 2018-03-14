@@ -15,6 +15,7 @@
 }
 .wrapper {
   max-width: 1200px;
+  margin: 0 auto;
   padding: 0 27px;
   box-sizing: border-box;
 }
@@ -96,7 +97,8 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 .baner {
   width: 520px;
-  min-height: 196px;
+  min-height: 197px;
+  margin-bottom: 34px;
   padding: 16px 20px;
   font-weight: 700;
   color: #ffffff;
@@ -116,7 +118,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 .baner a {
   float: right;
-  padding: 10px 24px;
+  padding: 10px 22px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -132,6 +134,64 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 /*Популярные товары*/
 .popular {
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
+  padding: 6px 0;
+  justify-content: center;
   list-style: none;
 }
+.hit {
+  position: relative;
+  width: 293px;
+  height: 405px;
+  text-align: center;
+  border-radius: 5px;
+}
+.hit:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+/*.hit:hover .hovering {
+  display: inline-block;
+}*/
+.hit img {
+  border-radius: 50%;
+}
+.price {
+  position: absolute;
+  bottom: 105px;
+  left: 10px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.price::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 40px;
+  background: url(../img/rub.svg) no-repeat;
+}
+.mass {
+  position: absolute;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.hit .name-cream {
+  display: inline-block;
+  width: 267px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.hit .hovering {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 22px;
+  }
+      
