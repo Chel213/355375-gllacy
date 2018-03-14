@@ -1,10 +1,22 @@
-body {
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+ }
+ body {
   
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   background-color: #849d8f; 
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 27px;
+  box-sizing: border-box;
 }
 /* Общее-поведение кнопок --> */
 .button {
@@ -75,5 +87,51 @@ input[id="btn-2"]:checked ~ .slider-inner .slides-2 {
 input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   display: block
 }
-
 /*слайдер конец*/
+
+/*Банеры*/
+.baners {
+  display: flex;
+  justify-content: space-between;
+}
+.baner {
+  width: 520px;
+  min-height: 196px;
+  padding: 16px 20px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 12px;
+}
+.baner h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 35px;
+  line-height: 41px;
+}
+.baner p {
+  margin: 0;
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.baner a {
+  float: right;
+  padding: 10px 24px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 23px;
+}
+.baner-left {
+  background: #760221 url("../img/raspberry-background.jpg");
+}
+.baner-right {
+  background: #7b5241 url(../img/chocolate-background.jpg);
+}
+/*Популярные товары*/
+.popular {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
