@@ -11,13 +11,8 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  color: #ffffff;
   background-color: #849d8f; 
-}
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 27px;
-  box-sizing: border-box;
 }
 /* Общее-поведение кнопок --> */
 .button {
@@ -38,6 +33,70 @@
   box-shadow: inset 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
  /* <--Общее поведение кнопок */
+
+ /*header*/
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 27px;
+  box-sizing: border-box;
+}
+
+.main-nav {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+  width: 700px;
+  margin: 12px 0;
+  padding: 0 10px;
+  list-style: none;
+}
+.site-nav-item {
+  position: relative;
+  height: 20px;
+  padding: 6px 14px;
+  border-radius: 16px;
+}
+.site-nav-item:hover {
+  background-color: #f7f6f3;
+}
+.site-nav-item:hover a {
+  color: #323232;
+}
+.site-nav-item:hover .submenu-catalog {
+  display: block;
+}
+.site-nav-item a {
+  text-decoration: none;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.submenu-catalog {
+  position: absolute;
+  display: none;
+  padding: 12px 20px;
+  list-style: none;
+  background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.submenu-catalog-item a {
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.window-search {
+  width: 341px;
+  height: 84px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
 
 /* Слайдер начало*/
 .slider-controls label {
@@ -101,7 +160,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   margin-bottom: 34px;
   padding: 16px 20px;
   font-weight: 700;
-  color: #ffffff;
   border-radius: 12px;
 }
 .baner h3 {
@@ -163,7 +221,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  color: #ffffff;
 }
 .price::after {
   content: "";
@@ -177,7 +234,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
-  color: #ffffff;
 }
 .hit .name-cream {
   display: inline-block;
@@ -193,5 +249,5 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   font-weight: 700;
   color: #ffffff;
   border-radius: 22px;
-  }
+}
       
