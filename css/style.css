@@ -5,6 +5,15 @@
   height: 1px;
   margin: -1px;
  }
+ .container {
+   display: flex;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 27px;
+   box-sizing: border-box;
+ }
+
+
  body {
   
   font-family: "Roboto", "Arial", sans-serif;
@@ -263,7 +272,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 
 /*Банеры*/
 .baners {
-  display: flex;
   justify-content: space-between;
 }
 .baner {
@@ -362,4 +370,12 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   color: #ffffff;
   border-radius: 22px;
 }
-      
+
+
+/*catalog*/
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
