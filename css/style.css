@@ -89,7 +89,9 @@ textarea::-webkit-input-placeholder {
  
  /*header*/
 .main-header {
+  position: relative;
   margin: 10px auto;
+  z-index: 1;
 }
 .main-nav {
   display: flex;
@@ -377,8 +379,14 @@ input[id^="btn-"] {
 .slides-3 {
   position: relative;
   display: none;
+}
+.slides-1 img,
+.slides-2 img,
+.slides-3 img {
+  position: absolute;
   z-index: -1;
 }
+
 input[id="btn-1"]:checked ~ .slider-inner .slides-1 {
   display: block
 }
