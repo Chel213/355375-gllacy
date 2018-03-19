@@ -91,6 +91,7 @@ textarea::-webkit-input-placeholder {
 .main-header {
   position: relative;
   margin: 10px auto;
+  margin-bottom: 0px;
   z-index: 1;
 }
 .main-nav {
@@ -103,8 +104,9 @@ textarea::-webkit-input-placeholder {
 }
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  width: 690px;
+  max-width: 690px;
   margin-top: 14px;
   margin-bottom: 19px;
   margin-right: 30px;
@@ -167,6 +169,7 @@ textarea::-webkit-input-placeholder {
   display: flex;
   margin: 14px 0;
   margin-bottom: 19px;
+  margin-left: auto;
 }
 label[for="search"] {
   display: inline-block;
@@ -286,7 +289,9 @@ label[for="search"]:hover + .window-search {
 }
 
 .header-contact {
+  display: flex;
   flex-direction: column;
+  margin-left: auto;
 }
 .header-contact p {
   margin: 0;
@@ -331,7 +336,7 @@ label[for="search"]:hover + .window-search {
 .slides-2 a,
 .slides-3 a {
   padding: 10px 42px;
-  top: 542px;
+  top: 552px;
   left: 381px;
   font-weight: 700;
   font-size: 32px;
@@ -345,7 +350,7 @@ label[for="search"]:hover + .window-search {
 .slides-2 b,
 .slides-3 b {
   position: absolute;
-  top: 391px;
+  top: 401px;
   left: 177px;
   width: 690px;
   margin: 0 auto;
@@ -359,7 +364,7 @@ label[for="search"]:hover + .window-search {
 }
 .slider-controls {
   position: absolute;
-  top: 564px;
+  top: 574px;
   left: -23px;
 }
 input[id^="btn-"] {
@@ -385,6 +390,7 @@ input[id^="btn-"] {
 .slides-3 img {
   position: absolute;
   z-index: -1;
+  top: 10px
 }
 
 input[id="btn-1"]:checked ~ .slider-inner .slides-1 {
@@ -401,7 +407,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 /*Банеры*/
 .baners {
   justify-content: space-between;
-  margin-top: 520px;
+  margin-top: 530px;
   margin-bottom: 25px;
 }
 .baner {
@@ -816,6 +822,8 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 /*catalog*/
 
 .window-cart {
+  position: absolute;
+  display: none;
   padding: 20px 15px;
   background: #f8f7f4;
   border-radius: 5px;
@@ -868,9 +876,55 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   text-align: right;
 }
 
-
+.breadcrumbs {
+  display: flex;
+  margin-right: auto;
+  padding-top: 24px;
+}
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+.prev-position {
+  padding-right: 22px; 
+}
+.prev-position::after {
+  content: " »";
+  text-decoration: none;
+}
+.page-title {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+}
+.filter-item-name {
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.filter-popular {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}
+.filter-price {
+  display: flex;
+  flex-wrap: wrap;
+  width: 235px;
+}
+.filter-fat {
+  display: flex;
+  flex-wrap: wrap;
+  width: 445px;
 }
