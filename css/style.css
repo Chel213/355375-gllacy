@@ -811,23 +811,55 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   padding: 20px 15px;
   background: #f8f7f4;
   border-radius: 5px;
-  box-shadow: 0 20 20 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .status-cart {
+  width: 510px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+  border-collapse: collapse;
+  border-bottom: 1px solid #cacac7;
+}
 
-}
-.item-cart {
-  margin-bottom: 18px;
-}
-.item-cart td {
-  padding: 0;
-} 
 .item-del {
-  width: 28px;
-  padding: 0;
+  width: 25px;
+  padding: 6px;
   background: url(../img/item-del.svg) no-repeat 50%;
   border:none;
 }
+.img-cart {
+  width: 37px;
+}
+.img-cart img {
+  border-radius: 50%;
+}
+.name-cart {
+  width: 240px;
+  padding: 0 10px;
+}
+.name-cart a {
+  color: #323232;
+  text-decoration: none;
+}
+.mass-cart {
+  width: 45px;
+}
+.price-cart {
+  width: 78px;
+  color: #999999;
+}
+.total-cart {
+  text-align: right;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #323232;
+}
+.checkout-cart {
+  text-align: right;
+}
+
 
 .breadcrumbs a {
   font-size: 14px;
