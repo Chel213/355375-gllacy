@@ -314,7 +314,6 @@ label[for="search"]:hover + .window-search {
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
-  z-index: -1;
 }
 .slider-controls label {
   display: inline-block;
@@ -331,7 +330,7 @@ label[for="search"]:hover + .window-search {
 .slides-3 a {
   padding: 10px 42px;
   top: 542px;
-  left: 410px;
+  left: 381px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -345,7 +344,7 @@ label[for="search"]:hover + .window-search {
 .slides-3 b {
   position: absolute;
   top: 391px;
-  left: 205px;
+  left: 177px;
   width: 690px;
   margin: 0 auto;
   font-size: 60px;
@@ -358,7 +357,8 @@ label[for="search"]:hover + .window-search {
 }
 .slider-controls {
   position: absolute;
-  top: -83px;
+  top: 564px;
+  left: -23px;
 }
 input[id^="btn-"] {
   display: none;
@@ -375,9 +375,9 @@ input[id^="btn-"] {
 .slides-1,
 .slides-2,
 .slides-3 {
-  
+  position: relative;
   display: none;
-  
+  z-index: -1;
 }
 input[id="btn-1"]:checked ~ .slider-inner .slides-1 {
   display: block
