@@ -18,10 +18,7 @@ html {
 *, ::before, ::after {
   box-sizing: inherit;
 }
-
-
  body {
-  
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -89,14 +86,11 @@ textarea::-webkit-input-placeholder {
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   border:0;
 }
- /* <--Общее поведение кнопок */
-
-
+ 
  /*header*/
 .main-header {
   margin: 10px auto;
 }
-
 .main-nav {
   display: flex;
 }
@@ -257,7 +251,7 @@ label[for="search"]:hover + .window-search {
   padding: 10px 26px;
   border-radius: 22px;
 }
-.registracion-container {
+.registration-container {
   position: absolute;
   left: 139px;
   top: 149px;
@@ -309,14 +303,18 @@ label[for="search"]:hover + .window-search {
 }
 
 
-
-
-/* Слайдер начало*/
-.slider {
+/* Слайдер*/
+.slider-wrapper {
   position: relative;
+}
+.slider {
+  position: absolute;
+  top: -128px;
+  left: 50px;
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
+  z-index: -1;
 }
 .slider-controls label {
   display: inline-block;
@@ -332,21 +330,22 @@ label[for="search"]:hover + .window-search {
 .slides-2 a,
 .slides-3 a {
   padding: 10px 42px;
+  top: 542px;
+  left: 410px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #ffffff;
   border-radius: 32px;
   position: absolute;
-  top: 542px;
-  left: 382px;
+  
 }
 .slides-1 b,
 .slides-2 b,
 .slides-3 b {
   position: absolute;
   top: 391px;
-  left: 177px;
+  left: 205px;
   width: 690px;
   margin: 0 auto;
   font-size: 60px;
@@ -376,11 +375,9 @@ input[id^="btn-"] {
 .slides-1,
 .slides-2,
 .slides-3 {
-  position: absolute;
-  top: -647px;
-  left: 78px;
+  
   display: none;
-  z-index: -1;
+  
 }
 input[id="btn-1"]:checked ~ .slider-inner .slides-1 {
   display: block
@@ -391,12 +388,12 @@ input[id="btn-2"]:checked ~ .slider-inner .slides-2 {
 input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   display: block
 }
-/*слайдер конец*/
+
 
 /*Банеры*/
 .baners {
   justify-content: space-between;
-  margin-top: 529px;
+  margin-top: 520px;
   margin-bottom: 25px;
 }
 .baner {
@@ -437,7 +434,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 
 /*Популярные товары*/
-
 .popular-catalog {
   display: flex;
   width: 100%;
@@ -457,7 +453,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   padding: 31px;
   background: url(../img/hit-image.svg) no-repeat; 
 }
-
 .hit img {
   width: 267px;
   height: 267px;
@@ -494,7 +489,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   color: #ffffff;
 }
 
-
+/*Особенности*/
 .features {
   width: 1200px;
   margin: 0 auto;
@@ -557,7 +552,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   background: url(../img/termometr-image.svg) no-repeat;
 }
 
-
+/*блог рассылка*/
 .info {
   justify-content: space-between;
   margin-bottom: 40px;
@@ -587,7 +582,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   color: rgb(50, 50, 50);
 }
 
-
 .distribution {
   width: 560px;
   padding: 5px;
@@ -615,7 +609,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   border-radius: 22px;
 }
 
-
+/*карта*/
 .map {
   position: relative;
   width: 1200px;
@@ -676,6 +670,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   background: url(../img/pin-image.png) no-repeat;
 }
 
+/*модалка*/
 .modal {
   display: none;
   position: absolute;
@@ -724,7 +719,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   border-radius: 23px; 
 }
 
-
+/*footer*/
 .main-footer {
   display: flex;
 }
@@ -811,6 +806,28 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 
 
 /*catalog*/
+
+.window-cart {
+  padding: 20px 15px;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20 20 0 rgba(0, 0, 0, 0.4);
+}
+.status-cart {
+
+}
+.item-cart {
+  margin-bottom: 18px;
+}
+.item-cart td {
+  padding: 0;
+} 
+.item-del {
+  width: 28px;
+  padding: 0;
+  background: url(../img/item-del.svg) no-repeat 50%;
+  border:none;
+}
 
 .breadcrumbs a {
   font-size: 14px;
