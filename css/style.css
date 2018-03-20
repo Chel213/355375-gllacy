@@ -116,6 +116,9 @@ textarea::-webkit-input-placeholder {
 .main-nav {
   display: flex;
 }
+.header-control {
+  display: flex;
+}
 .logo {
   width: 154px;
   height: 64px;
@@ -126,36 +129,40 @@ textarea::-webkit-input-placeholder {
   flex-wrap: wrap;
   align-items: center;
   max-width: 690px;
-  margin-top: 14px;
-  margin-bottom: 19px;
-  margin-right: 30px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 .site-nav-item {
   position: relative;
+  height: 100%;
+  padding: 17px 0;
+}
+.site-nav-item a {
+  display: block;
   padding: 5px 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
   border-radius: 16px;
 }
-.site-nav-item:hover {
-  background-color: #f7f6f3;
-}
-.site-nav-item:hover a {
+.site-nav-item a:hover {
   color: #323232;
+  background-color: #f7f6f3;
+  outline: none;
+}
+.site-nav-item a:active{
+  background: #ededed;
+  box-shadow: inset 0px 2px 1px 0px #696969;
+  outline: none;
 }
 .site-nav-item:hover .submenu-catalog {
   display: block;
 }
-.site-nav-item a {
-  line-height: 18px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
 .submenu-catalog {
   position: absolute;
-  top: 40px;
-  left: -10px;
+  top: 50px;
+  z-index: 2;
   display: none;
   width: 143px;
   padding: 0 6px;
