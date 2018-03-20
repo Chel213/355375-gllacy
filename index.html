@@ -28,27 +28,37 @@
         </nav>
         <section class="user-block">
           <h3 class="visually-hidden">Пользовательский блок</h3>
-          <label for="search">поиск</label>
-          <div class="window-search">
-            <form class="search-header" action="https://echo.htmlacademy.ru" method="GET">
-              <input type="search" name="site-search" id="search" placeholder="Что ищем?">
-            </form>
-          </div>
-          <a class="entry">Вход</a>
-          <div class="window-login">
-            <form class="entry-form"
-            action="https://echo.htmlacademy.ru/" method="POST">
-              <input type="email" name="user-email" id="email" placeholder="Электронная почта">
-              <input type="password" name="user-password" placeholder="Пароль">
-              <button class="btn" type="submit">Войти</button>
-            </form>
-            <div class="registration-container">
-              <a class="registration" href="#">Забыли пароль?</a>
-              <a class="registration" href="#">Новая регистрация</a>
-            </div>
-          </div>
-
-          <a class="cart" href="#">Пусто</a>
+          <ul class="user-block-items">
+            <li class="user-search" tabindex="0">
+              <label for="search">поиск</label>
+              <ul class="window-search">
+                <li>
+                  <form class="search-header" action="https://echo.htmlacademy.ru" method="GET">
+                    <input type="search" name="site-search" id="search" placeholder="Что ищем?">
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li class="user-login" tabindex="0">
+              <a class="entry">Вход</a>
+              <ul class="window-login">
+                <li>
+                  <form class="entry-form"
+                  action="https://echo.htmlacademy.ru/" method="POST">
+                    <input type="email" name="user-email" id="email" placeholder="Электронная почта">
+                    <input type="password" name="user-password" placeholder="Пароль">
+                    <button class="btn" type="submit">Войти</button>
+                  </form>
+                  <div class="registration-container">
+                    <a class="registration" href="#">Забыли пароль?</a>
+                    <a class="registration" href="#">Новая регистрация</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="user-cart">
+              <a class="cart" href="#">Пусто</a>
+          </ul>
         </section>
       </div>
       <div class="header-info container">
