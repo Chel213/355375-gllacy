@@ -30,12 +30,13 @@
           <h3 class="visually-hidden">Пользовательский блок</h3>
           <ul class="user-block-items">
             <li class="user-search" tabindex="0">
-              <label for="search">поиск</label>
+              <span class="search"></span>
               <ul class="window-search">
                 <li>
                   <form class="search-header" action="https://echo.htmlacademy.ru" method="GET">
                     <input type="search" name="site-search" id="search" placeholder="Что ищем?">
                   </form>
+                  <label for="search"><span class="visually-hidden" поиск</label>
                 </li>
               </ul>
             </li>
@@ -50,8 +51,8 @@
                     <button class="btn" type="submit">Войти</button>
                   </form>
                   <div class="registration-container">
-                    <a class="registration" href="#">Забыли пароль?</a>
-                    <a class="registration" href="#">Новая регистрация</a>
+                    <a class="registration link-black" href="#">Забыли пароль?</a>
+                    <a class="registration link-black" href="#">Новая регистрация</a>
                   </div>
                 </li>
               </ul>
@@ -114,48 +115,54 @@
           <a class="button" href="#">Хочу шоколадки!</a>
         </section>
       </section>
-      <section class="popular container">
+      <section class="catalog popular">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="popular-catalog">
-          <li class="hit">
+        <ul class="catalog-product">
+          <li class="catalog-item hit">
             <img src="img/cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="price">310</p>
             <p class="mass">/кг</p>
             <a class="name-cream" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <div class="catalog-item-active"></div>
+            <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hit">
+          <li class="catalog-item hit">
             <img src="img/cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <p class="price">380</p>
             <p class="mass">/кг</p>
             <a class="name-cream" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <div class="catalog-item-active"></div>
+            <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hit">
+          <li class="catalog-item hit">
             <img src="img/cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p class="price">355</p>
             <p class="mass">/кг</p>
             <a class="name-cream" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <div class="catalog-item-active"></div>
+            <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hit">
+          <li class="catalog-item hit">
             <img src="img/cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <p class="price">415</p>
             <p class="mass">/кг</p>
             <a class="name-cream" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <div class="catalog-item-active"></div>
+            <button class="btn" type="button">Быстрый просмотр</button>
           </li>
         </ul>
       </section>
         <!--Особенности-->
-        <div class="center container">
-          <section class="features">
-            <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-            <ul class="advantages">
-              <li class="production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-              <li class="ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-              <li class="natural">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-              <li class="termal-pack">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-              
-            </ul>
-          </section>
-        </div>
+      <section class="features container">
+        <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+        <ul class="advantages">
+          <li class="advantages-item production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="advantages-item ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="advantages-item natural">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="advantages-item termal-pack">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+        </ul>
+      </section>
+        
         <!--Блог-->
         <section class="info container">
           <h3 class="visually-hidden">Полезная информация</h3>
@@ -178,7 +185,9 @@
         <!--Карта с контактами-->
         <section class="map">
           <h3 class="visually-hidden">Наши контакты</h3>
-          <img src="img/map-contact.jpg" width="1200" height="430" alt="Карта проезда">
+          <div class="map-road">
+            <img src="img/map-contact.jpg"  width="100%" alt="Карта проезда">
+          </div>
           <div class="contact">
             <p class="name-contact">Адрес главного офиса<br> и офлайн-магазина:</p>
             <p class="addres">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -209,15 +218,15 @@
         <li><a class="social-btn vk" href="#">ВК</a></li>
       </ul>
       <ul class="footer-info">
-        <li class="heart"><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
+        <li class="heart"><a class="link-white" href="#">Для поставщиков</a></li>
+        <li><a class="link-white" href="#">О производстве</a></li>
       </ul>
       <ul class="footer-info">
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <li><a class="link-white" href="#">Наши документы</a></li>
+        <li><a class="link-white" href="#">Экологические стандарты</a></li>
       </ul>
       <div class="copyright">
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <a class="link-white" class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="logo Htmlacademy">
           <p>Сделано в HTML Academy © 2017</p>
         </a>
