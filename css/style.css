@@ -1067,7 +1067,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   height: 4px;
   background: rgba(248, 247, 244, 1);
 }
-.range-band-active::before {
+.range-control-left {
   position: absolute;
   top: -8px;
   left: -10px;
@@ -1076,8 +1076,9 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 10px;
+  cursor: pointer;
 }
-.range-band-active::after {
+.range-control-right {
   position: absolute;
   top: -8px;
   left: 75px;
@@ -1086,6 +1087,11 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 10px;
+  cursor: pointer;
+}
+.range-control-left:hover,
+.range-control-right:hover {
+  transform: scale(1.1);
 }
 
 .filter-fat-control {
