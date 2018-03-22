@@ -346,6 +346,9 @@ textarea::-webkit-input-placeholder {
   background-position-y: center;
 }
 
+.header-info {
+  display: flex;
+}
 .header-contact {
   display: flex;
   flex-direction: column;
@@ -974,21 +977,27 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   text-align: right;
 }
 
-.breadcrumbs {
+
+.bread-crumbs {
   display: flex;
   margin-right: auto;
-  padding-top: 24px;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.breadcrumbs a {
+.bread-crumbs a {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 }
 .prev-position {
-  padding-right: 22px; 
+  padding-right: 8px; 
 }
+
 .prev-position::after {
   content: " »";
+  padding-left: 3px;
   text-decoration: none;
 }
 .page-title {
