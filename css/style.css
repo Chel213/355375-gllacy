@@ -160,6 +160,9 @@ textarea::-webkit-input-placeholder {
   color: #ffffff;
   border-radius: 16px;
 }
+.nav-active > a {
+  background-color: #d07058;
+}
 .site-nav-item a:hover {
   color: #323232;
   background-color: #f7f6f3;
@@ -214,7 +217,7 @@ textarea::-webkit-input-placeholder {
   height: 100%;
   list-style: none;
 }
-.user-block-items li {
+.user-block-items > li {
   padding-top: 15px;
 }
 .search {
@@ -509,6 +512,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 .catalog-product {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
   padding: 0 13px;
