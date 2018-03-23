@@ -93,7 +93,7 @@
             </ul>
           </section>
         </div>
-        <div class="header-info container">
+        <div class="header-info">
           <ul class="bread-crumbs">
             <li class="bread-crumbs-item prev-position">
               <a class="link-white" href="index.html">Главная</a>
@@ -118,15 +118,16 @@
       <section class="filter-catalog container">
         <h3 class="visually-hidden">Фильтр подбора товаров</h3>
         <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
-          
           <div class="filter-popular">
             <label class="filter-item-name" for="sorting-popular">Сортировка</label>
-            <select name="filter-catalog-popular" id="sorting-popular">
-              <option value="по популярности">по популярности</option>
-              <option value="сначала недорогие">сначала не дорогие</option>
-              <option value="сначала дорогие">сначала дорогие</option>
-              <option value="по жирности">по жирности</option>
-            </select>
+            <div class="select-style">
+              <select name="filter-catalog-popular" id="sorting-popular">
+                <option value="по популярности">по популярности</option>
+                <option value="сначала недорогие">сначала не дорогие</option>
+                <option value="сначала дорогие">сначала дорогие</option>
+                <option value="по жирности">по жирности</option>
+              </select>
+            </div>
           </div>
           <div class="filter-price">
             <p class="filter-item-name">Цена: 100 руб. - 500 руб.</p>
@@ -141,13 +142,13 @@
           <div class="filter-fat">
             <p class="filter-item-name">Жирность</p>
             <div class="filter-fat-control">
-              <input type="radio" name="filter-catalog-fat" id="fat-0" value="0%">
+              <input class="visually-hidden" type="radio" name="filter-catalog-fat" id="fat-0" value="0%">
               <label for="fat-0">0%</label>
-              <input type="radio" name="filter-catalog-fat" id="fat-10" value="до 10%" checked>
+              <input class="visually-hidden" type="radio" name="filter-catalog-fat" id="fat-10" value="до 10%" checked>
               <label for="fat-10">до 10 %</label>
-              <input type="radio" name="filter-catalog-fat" id="fat-30" value="до 30%">
+              <input class="visually-hidden" type="radio" name="filter-catalog-fat" id="fat-30" value="до 30%">
               <label for="fat-30">до 30%</label>
-              <input type="radio" name="filter-catalog-fat" id="fat-over-30" value="выше 30%">
+              <input class="visually-hidden" type="radio" name="filter-catalog-fat" id="fat-over-30" value="выше 30%">
               <label for="fat-over-30">выше 30%</label>
             </div>
           </div>
@@ -167,7 +168,7 @@
           </div>
         </div>
 
-        <button class="buttom" type="submit">Применить</button>
+        <button class="btn-filter" type="submit">Применить</button>
       </form>
     </section>
     <section class="catalog">

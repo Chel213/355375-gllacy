@@ -6,7 +6,7 @@
   margin: -1px;
  }
 .container {
-  width: 1146px;
+  max-width: 1146px;
   margin: 0 auto;
 }
 html {
@@ -181,11 +181,12 @@ textarea::-webkit-input-placeholder {
 .site-nav-item {
   position: relative;
   height: 100%;
-  padding: 17px 0;
+  padding: 0;
+  padding-top: 17px;
 }
 .site-nav-item a {
   display: block;
-  padding: 5px 14px;
+  padding: 7px 14px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -552,7 +553,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   margin: 0 auto;
 }
 .popular {
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 }
 .catalog-product {
   display: flex;
@@ -648,7 +649,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 /*Особенности*/
 .features {
   margin-bottom: 38px;
-  padding: 27px 8px;
+  padding: 24px 8px;
   color: rgb(50, 50, 50);
   background: rgb(241, 231, 210) url(../img/features-background.jpg) repeat;
   border-radius: 12px;
@@ -670,6 +671,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   position: relative;
   margin: 0 13px;
   margin-top: 20px;
+  margin-bottom: 2px;
   width: 539px;
   padding-left: 57px;
 }
@@ -714,7 +716,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 .blog {
   width: 560px;
-  padding: 15px 20px;
+  padding: 16px 20px;
   background: rgb(255, 255, 255) url(../img/strawberry-background.jpg) no-repeat 17% 39%;
   border-radius: 12px;
 }
@@ -787,7 +789,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   line-height: 20px;
 }
 .contact .addres {
-  margin-bottom: 17px;
+  margin-bottom: 19px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -815,14 +817,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   line-height: 24px;
   color: #fefefe;
 }
-/*.map::after {
-  position: absolute;
-  top: 139px;
-  left: 265px;
-  content: "";
-  padding: 140px 80px;
-  background: url(../img/pin-image.png) no-repeat;
-}*/
 
 /*модалка*/
 .modal {
@@ -882,7 +876,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 35px;
   margin-right: 205px;
   margin-bottom: 26px;
 }
@@ -920,7 +914,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 
 .footer-info {  
   margin: 0;
-  margin-top: 24px;
+  margin-top: 32px;
   padding: 0 16px;
   list-style: none;
 }
@@ -945,7 +939,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 
 .copyright {
-  margin-top: 10px;
+  margin-top: 18px;
   margin-left: auto;
   font-size: 12px;
   line-height: 18px;
@@ -1063,15 +1057,19 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   flex-direction: column;
   flex-wrap: wrap;
 }
+.select-style {
+  width: 193px;
+  border-radius: 18px; 
+  overflow: hidden;
+}
 .filter-popular select {
   padding: 9px 18px;
+  line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(248, 247, 244, 0.2);
   border: none;
-  border-radius: 18px;  
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
+   
  
 }
 .filter-popular select:hover,
@@ -1138,9 +1136,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
 }
-.filter-fat-control input {
-  display: none;
-}
 .filter-fat-control label{
   position: relative;
   margin-right: 19px;
@@ -1149,13 +1144,20 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .filter-fat-control label:last-child {
   margin-right: 0;
 }
-.filter-fat-control label:before {
+.filter-fat-control label::before {
   position: absolute;
   left: 0px;
   width: 22px;
   height: 22px;
   content: "";
   background: url(../img/radio-off.svg) no-repeat;
+  opacity: 0.8;
+}
+.filter-fat-control label:hover::before {
+  opacity: 1;
+}
+.filter-fat-control input:disabled +label::before {
+  opacity: 0.6;
 }
 .filter-fat-control input:checked + label:before {
   background: url(../img/radio-on.svg) no-repeat;
@@ -1174,18 +1176,56 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .filter-additive-control label:last-child {
   margin-right: 0;
 }
-.filter-additive-control label:before {
+.filter-additive-control label::before {
   position: absolute;
   left: 0;
   width: 25px;
   height: 22px;
   content: "";
   background: url(../img/checkbox-off.svg) no-repeat;
+  opacity: 0.8;
+}
+.filter-additive-control label:hover::before,
+.filter-additive-control input:focus + label::before {
+  opacity: 1;
+}
+.filter-additive-control input:disabled + label::before {
+  opacity: 0.6;
+}
+.filter-additive-control input:checked + label::before {
+  background: url(../img/checkbox-on.svg) no-repeat;
+}
+
+.btn-filter {
+  margin-top: 22px;
+  padding: 7px 28px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.19);
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+}
+.btn-filter:hover {
+  color: #323232;
+  padding: 9px 30px;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+}
+.btn-filter:active {
+  padding: 9px 30px;
+  color: #323232;
+  background-color: rgba(237, 237, 237, 1);
+  border: none;
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
+    
+  
 }
 
 
-.filter-additive-control input:checked + label::before {
-  background: url(../img/checkbox-on.svg) no-repeat;
+
+.catalog-product li:last-child {
+  margin-right: auto;
 }
 
 
