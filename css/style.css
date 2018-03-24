@@ -559,7 +559,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   flex-wrap: wrap;
   width: 100%;
   margin: 0;
-  margin-bottom: 55px;
   padding: 0 13px;
   justify-content: space-between;
   list-style: none;
@@ -1242,7 +1241,8 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 
 .catalog {
   margin-top: 16px;
-}
+  }
+ 
 .catalog-product li:last-child {
   margin-right: auto;
 }
@@ -1253,8 +1253,11 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0 27px;
+  margin-top: 55px;
   padding: 0;
+  padding-bottom: 30px;
   list-style: none;
+  border-bottom: 1px solid rgba(255, 255,255,0.3);
 }
 .page-number {
   margin: 0 2px;
