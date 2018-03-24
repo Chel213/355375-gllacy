@@ -636,14 +636,22 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
-.catalog-item .name-cream {
+.catalog-item .name-cream-container {
+  position: relative;
   display: inline-block;
   width: 267px;
   margin-bottom: 8px;
+}
+.catalog-item .name-cream {
   font-weight: 500;
   color: #ffffff;
 }
-
+  /*
+  background-image: linear-gradient(to right, blue 75%, transparent 75%);
+  background-position: 0 1.04em;
+  background-repeat: repeat-x;
+  background-size: 8px 3px;
+}*/
 
 /*Особенности*/
 .features {
@@ -1074,7 +1082,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 .filter-popular select {
   height: 36px;
-  padding: 0 16px;
+  padding: 0 12px;
   width: 120%;
   line-height: 18px;
   font-weight: 500;
