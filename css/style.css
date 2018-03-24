@@ -550,7 +550,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .catalog {
   max-width: 1200px;
   margin: 0 auto;
-}
+  }
 .popular {
   margin-bottom: 10px;
 }
@@ -1324,6 +1324,10 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   background: rgba( 255, 255, 255, 1);
   transform: rotate(-45deg);
 }
-
+.prev.no-active,
+.next.no-active {
+  opacity: 0.2;
+  cursor: auto;
+}
 
 
