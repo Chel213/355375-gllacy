@@ -1230,6 +1230,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   padding-left: 32px;
   line-height: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 .filter-fat-control label:last-child {
   margin-right: 0;
@@ -1265,6 +1266,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   margin-right: 23px;  
   line-height: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 .filter-additive-control label:last-child {
   margin-right: 0;
