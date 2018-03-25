@@ -958,59 +958,109 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 
 /*catalog*/
 
+
+.cart.buy {
+  padding: 8px 16px;
+  color: rgb(50, 50, 50);
+  background: rgba(255, 255, 255, 1);
+  
+}
+.cart.buy::before {
+  padding: 3px 14px;
+  content: "";
+  background: url(../img/cart-active.svg) no-repeat;
+  background-position-y: center;
+}
+
+.user-cart:hover .buy + .window-cart {
+  display: flex;
+}
 .window-cart {
   position: absolute;
+  top: 49px;
+  right: 0;
   display: none;
-  padding: 20px 15px;
+  flex-direction: column;
+  padding: 5px 14px;
   background: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
+.item-cart {
+  height: 55px;
+}
 .status-cart {
-  width: 510px;
+  width: 512px;
+  margin-bottom: 15px;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
   border-collapse: collapse;
-  border-bottom: 1px solid #cacac7;
 }
-
-.item-del {
+.buy-del {
   width: 25px;
-  padding: 6px;
+  padding-top: 23px;
+  vertical-align: baseline;
+}
+.item-del {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
   background: url(../img/item-del.svg) no-repeat 50%;
   border:none;
 }
 .img-cart {
-  width: 37px;
+  width: 34px;
+  padding-top: 10px;
+  vertical-align: middle;
 }
 .img-cart img {
   border-radius: 50%;
 }
 .name-cart {
-  width: 240px;
-  padding: 0 10px;
+  width: 245px;
+  padding-left: 12px;
+  vertical-align: baseline;
 }
 .name-cart a {
   color: #323232;
   text-decoration: none;
 }
 .mass-cart {
-  width: 45px;
-}
+  width: 58px;
+  vertical-align: baseline;
+  text-align: right;
+ }
 .price-cart {
   width: 78px;
+  vertical-align: baseline;
+  text-align: left;
   color: #999999;
 }
+.sum-cart {
+  vertical-align: baseline;
+  text-align: left;
+}
 .total-cart {
+  margin: 0;
+  padding: 14px 0;
   text-align: right;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
   color: #323232;
+  border-top: 1px solid;
 }
 .checkout-cart {
-  text-align: right;
+  margin-left: auto;
+  margin-bottom: 15px;
+  padding: 10px 14px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fefefe;
+  border-radius: 22px;
 }
 
 
