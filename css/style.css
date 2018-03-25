@@ -288,7 +288,8 @@ textarea::-webkit-input-placeholder {
   background-position: 50%;
   border-radius: 50%;
 }
-.search:hover {
+.search:hover,
+.search:focus {
   background: rgb(248, 247, 244) url(../img/loupe-activ.svg) no-repeat;
   background-position: 50%;
 }
@@ -333,11 +334,13 @@ textarea::-webkit-input-placeholder {
   background: url(../img/entry.svg) no-repeat;
   background-position-y: center;
 }
-.entry:hover {
+.entry:hover,
+.entry:focus {
   color: rgb(50, 50, 50);
   background: rgb(248, 247, 244);
 }
-.entry:hover::before {
+.entry:hover::before,
+.entry:focus::before {
   background: url(../img/entry-activ.svg) no-repeat;
   background-position-y: center;
 }
