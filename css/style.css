@@ -211,6 +211,7 @@ textarea::-webkit-input-placeholder {
 .submenu-catalog {
   position: absolute;
   top: 50px;
+  left: -7px;
   z-index: 2;
   display: none;
   width: 143px;
@@ -221,11 +222,22 @@ textarea::-webkit-input-placeholder {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
-.submenu-catalog-item {
-  padding: 10px 6px;
-}
+
 .submenu-catalog-item:hover {
   background-color: #fbded7;
+}
+.submenu-catalog-item {
+  padding: 8px 6px;
+}
+.submenu-catalog-item:last-child {
+  padding-bottom: 12px;
+}
+.submenu-catalog-item.novelty {
+  padding: 11px 6px;
+  border-bottom: 1px solid rgba(53, 53, 53, 0.2);
+}
+.submenu-catalog-item.novelty a {
+  font-weight: 700;
 }
 .submenu-catalog-item:active {
   background-color: #f6b5a5;
@@ -241,12 +253,7 @@ textarea::-webkit-input-placeholder {
   text-decoration: none;
   color: #323232;
 }
-.submenu-catalog-item.novelty {
-  border-bottom: 1px solid rgba(53, 53, 53, 0.2);
-}
-.submenu-catalog-item.novelty a {
-  font-weight: 700;
-}
+
 
 
 
@@ -330,11 +337,14 @@ textarea::-webkit-input-placeholder {
 .user-login:hover .window-login {
   display: block;
 }
+.window-login li {
+  padding-bottom: 5px;
+}
 .window-login {
   position: absolute;
   display: none;
   top: 50px;
-  left: -185px;
+  left: -182px;
   width: 277px;
   padding: 18px;
   background-color: rgb(248, 247, 244);
@@ -359,7 +369,7 @@ textarea::-webkit-input-placeholder {
 .registration-container {
   position: absolute;
   left: 139px;
-  top: 149px;
+  top: 145px;
 }
 .registration {
   width: 125px;
