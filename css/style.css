@@ -194,12 +194,23 @@ textarea::-webkit-input-placeholder {
   padding-top: 14px;
 }
 .site-nav-item a {
+  position: relative;
   display: block;
   padding: 7px 14px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+  text-decoration: none;
   border-radius: 16px;
+}
+.site-nav-item a:after {
+  position: absolute;
+  top: 24px;
+  display: block;
+  width: calc(100% - 28px);
+  height: 1px;
+  content: "";
+  background-color: rgba( 255, 255, 255, 0.2);
 }
 .nav-active > a {
   background-color: #d07058;
