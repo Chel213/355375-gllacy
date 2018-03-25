@@ -205,17 +205,19 @@
           </div>
         </section>
         <!--Модальное окно-->
-        <section class="modal window">
-          <h3 class="visually-hidden">Форма обратной связи</h3> 
-          <p>Мы обязательно вам ответим!</p>
-          <button class="close">Закрыть</button>
-          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="POST">
-            <input type="text" name="name-feedback" placeholder="Как вас зовут?">
-            <input type="email" name="email-feedback" placeholder="Ваша почта для ответа?">
-            <textarea name="text-feedback" placeholder="Напишите что-нибудь"></textarea>
-            <button class="btn" type="submit">Отправить</button>
-          </form>
-        </section>
+        <div class="modal-overlay">
+          <section class="modal window">
+            <h3 class="visually-hidden">Форма обратной связи</h3> 
+            <p>Мы обязательно вам ответим!</p>
+            <button class="close">Закрыть</button>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="POST">
+              <input type="text" name="name-feedback" placeholder="Как вас зовут?">
+              <input type="email" name="email-feedback" placeholder="Ваша почта для ответа?">
+              <textarea name="text-feedback" placeholder="Напишите что-нибудь"></textarea>
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
     </main>
     <footer class="main-footer container">
       <ul class="social">

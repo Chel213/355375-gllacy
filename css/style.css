@@ -842,6 +842,15 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 
 /*модалка*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .modal {
   display: none;
   position: fixed;
