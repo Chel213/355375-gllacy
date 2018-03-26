@@ -624,13 +624,18 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   padding: 10px;
   border-radius: 22px;
 }
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus {
   z-index: 1;
 }
 .catalog-item:hover .catalog-item-active,
-.catalog-item:hover .btn {
+.catalog-item:hover .btn,
+.catalog-item:focus .catalog-item-active,
+.catalog-item:focus .btn{
   display: block;
 }
+
+
 .hit::before {
   position: absolute;
   content: "";
