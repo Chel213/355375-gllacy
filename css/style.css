@@ -1192,8 +1192,9 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .filter-popular select:active,
 .filter-popular select:focus {
   color: #323232;
-  background: rgb(255, 255, 255) url(../img/select-down-active.svg) no-repeat 171px 50%;;
+  background: rgb(255, 255, 255) url(../img/select-down-active.svg) no-repeat 168px 50%;
   outline: none;
+  background-size: 11px 10px;
 }
 .filter-price {
   display: flex;
