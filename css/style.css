@@ -1324,8 +1324,8 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .filter-fat-control label:hover::before {
   opacity: 1;
 }
-.filter-fat-control input:disabled +label::before {
-  opacity: 0.6;
+.filter-fat-control input:disabled + label::before {
+  opacity: 0.4;
 }
 .filter-fat-control input:checked + label:before {
   background: url(../img/radio-on.svg) no-repeat;
