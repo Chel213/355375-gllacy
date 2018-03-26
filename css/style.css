@@ -1061,6 +1061,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   padding: 0;
   background: url(../img/item-del.svg) no-repeat 50%;
   border:none;
+  cursor: pointer;
 }
 .img-cart {
   width: 34px;
