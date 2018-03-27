@@ -852,12 +852,20 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 
 /*карта*/
 .map {
+  position: relative;
   min-height: 430px;
   margin: 0 auto;
   padding: 62px 0;
-  background: #ece5c8 url(../img/map-contact.jpg) no-repeat 50%;
+  background: #ece5c8;
+}
+.map-road {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -625px;
 }
 .contact {
+  position: relative;
   width: 302px;
   margin-left: auto; 
   padding: 29px 26px;
@@ -967,6 +975,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   padding: 11px 22px;
   align-self: flex-end;
   border-radius: 23px; 
+  cursor: pointer;
 }
 
 /*footer*/
