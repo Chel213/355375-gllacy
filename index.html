@@ -167,56 +167,41 @@
           <li class="advantages-item termal-pack">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
-        
-        <!--Блог-->
-        <section class="info container">
-          <h3 class="visually-hidden">Полезная информация</h3>
-          <article class="blog">
-            <h2 class="visually-hidden">Новости блога</h2>
-            <p class="title-blog">Новое в нашем блоге</p>
-            <p class="news-blog"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
-          </article>
-          <section class="distribution">
-            <h2 class="visually-hidden">Полезная рассылка</h2>
-            <div class="distribution-content">
-              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-              <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="POST" name="distribution">
-                <input type="email" name="email-distribution" placeholder="Электронная почта">
-                <button class="btn" type="submit">Отправить</button>
-              </form>
-            </div>
-          </section>
-        </section>
-        <!--Карта с контактами-->
-        <section class="map">
-          <h3 class="visually-hidden">Наши контакты</h3>
-          <img class="map-road" src="img/map-contact.jpg" width="1250" height="430" alt="карта проезда">
-          <iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/-/CBUHBOR1hB" height="430"></iframe>
-          <div class="map-contact container">
-            <div class="contact">
-              <p class="name-contact">Адрес главного офиса<br> и офлайн-магазина:</p>
-              <p class="addres">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-              <p class="name-contact">Для заказов по телефону:</p>
-              <p class="phone">8 812 450-25-25</p>
-              <p class="time">(с 10 до 20 ежедневно)</p>
-              <a class="popup button" href="form.html">Форма обратной связи</a>
-            </div>
-          </div>
-        </section>
-        <!--Модальное окно-->
-        <div class="modal-overlay">
-          <section class="modal window">
-            <h3 class="visually-hidden">Форма обратной связи</h3> 
-            <p>Мы обязательно вам ответим!</p>
-            <button class="close">Закрыть</button>
-            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="POST">
-              <input type="text" name="name-feedback" placeholder="Как вас зовут?">
-              <input type="email" name="email-feedback" placeholder="Ваша почта для ответа?">
-              <textarea name="text-feedback" placeholder="Напишите что-нибудь"></textarea>
+      <!--Блог-->
+      <section class="info container">
+        <h3 class="visually-hidden">Полезная информация</h3>
+        <article class="blog">
+          <h2 class="visually-hidden">Новости блога</h2>
+          <p class="title-blog">Новое в нашем блоге</p>
+          <p class="news-blog"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+        </article>
+        <section class="distribution">
+          <h2 class="visually-hidden">Полезная рассылка</h2>
+          <div class="distribution-content">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+            <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="POST" name="distribution">
+              <input type="email" name="email-distribution" placeholder="Электронная почта">
               <button class="btn" type="submit">Отправить</button>
             </form>
-          </section>
+          </div>
+        </section>
+      </section>
+      <!--Карта с контактами-->
+      <section class="map">
+        <h3 class="visually-hidden">Наши контакты</h3>
+        <img class="map-road" src="img/map-contact.jpg" width="1250" height="430" alt="карта проезда">
+        <iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/-/CBUHBOR1hB" height="430"></iframe>
+        <div class="map-contact container">
+          <div class="contact">
+            <p class="name-contact">Адрес главного офиса<br> и офлайн-магазина:</p>
+            <p class="addres">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+            <p class="name-contact">Для заказов по телефону:</p>
+            <p class="phone">8 812 450-25-25</p>
+            <p class="time">(с 10 до 20 ежедневно)</p>
+            <a class="popup button" href="form.html">Форма обратной связи</a>
+          </div>
         </div>
+      </section>
     </main>
     <footer class="main-footer container">
       <ul class="social">
@@ -240,6 +225,20 @@
         </a>
       </div>
     </footer>
+    <!--Модальное окно-->
+    <div class="modal-overlay">
+      <section class="modal window">
+        <h3 class="visually-hidden">Форма обратной связи</h3> 
+        <p>Мы обязательно вам ответим!</p>
+        <button class="close">Закрыть</button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <input type="text" name="name-feedback" placeholder="Как вас зовут?">
+          <input type="email" name="email-feedback" placeholder="Ваша почта для ответа?">
+          <textarea name="text-feedback" placeholder="Напишите что-нибудь"></textarea>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
