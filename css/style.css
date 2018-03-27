@@ -870,8 +870,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .interactive-map {
   position: absolute;
   top: 0;
-  z-index: 1;
-}
+ }
 .contact {
   position: relative;
   width: 302px;
@@ -880,7 +879,6 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   color: #323232;
   background: #fdfefe;
   border-radius: 8px;
-  z-index: 2;
 }
 .contact p {
   margin: 0;
