@@ -857,12 +857,20 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   margin: 0 auto;
   padding: 62px 0;
   background: #ece5c8;
+
 }
 .map-road {
   position: absolute;
   top: 0;
   left: 50%;
+  width: 1250px;
+  height: 430px;
   margin-left: -625px;
+}
+.interactive-map {
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 .contact {
   position: relative;
@@ -872,6 +880,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   color: #323232;
   background: #fdfefe;
   border-radius: 8px;
+  z-index: 2;
 }
 .contact p {
   margin: 0;
