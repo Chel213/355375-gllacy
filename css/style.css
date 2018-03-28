@@ -75,6 +75,14 @@ input[type="text"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
 }
+input[type="search"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
 /* Кнопки--> */
 .button {
   text-decoration: none;
