@@ -1137,7 +1137,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 .name-cart {
   width: 245px;
-  padding-top: 23px;
+  padding-top: 22px;
   padding-left: 12px;
   vertical-align: baseline;
 }
@@ -1162,7 +1162,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 .total-cart {
   margin: 0;
-  padding: 12px 0;
+  padding: 14px 0;
   text-align: right;
   font-size: 15px;
   line-height: 18px;
