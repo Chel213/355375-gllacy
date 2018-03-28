@@ -1099,6 +1099,9 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
+.window-cart li {
+  display: block;
+}
 .item-cart {
   height: 55px;
 }
