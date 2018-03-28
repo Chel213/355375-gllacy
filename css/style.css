@@ -873,6 +873,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   position: absolute;
   top: 0;
   width: 100%;
+  border: 0;
  }
 .contact {
   position: relative;
