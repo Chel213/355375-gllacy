@@ -584,6 +584,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .baners {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 33px;
 }
 .baner {
@@ -803,10 +804,12 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .info {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 39px;
 }
 .blog {
   width: 560px;
+  min-height: 220px;
   margin-right: auto;
   padding: 24px 20px;
   background: rgb(255, 255, 255) url(../img/strawberry-background.jpg) no-repeat 17% 39%;
@@ -994,6 +997,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   height: 155px;
   margin-bottom: 24px;
   padding: 7px 15px;
+  resize: none;
 }
 .modal-form .btn {
   padding: 11px 22px;
