@@ -22,7 +22,7 @@ html {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  background-color: #849d8f; 
+  background-color: #849d8f;
 }
 /*Поля ввода*/
 .input-text,
@@ -61,7 +61,7 @@ html {
   border: 1px solid rgba(46, 136, 228, 0.52);
   border-radius: 5px;
   box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
-} 
+}
 .input-text::-webkit-input-placeholder,
 .textarea::-webkit-input-placeholder,
 .input-search::-webkit-input-placeholder,
@@ -101,11 +101,11 @@ html {
 .btn:focus {
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   outline: none;
-  background:    
+  background:
     linear-gradient( rgba(255,255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, rgba(231,74,53, 1), rgba(242, 104, 67, 1));
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
-} 
+}
 .button:active,
 .btn:active {
   background:
@@ -302,7 +302,7 @@ html {
 }
 .search {
   display: inline-block;
-  margin-right: 11px; 
+  margin-right: 11px;
   padding: 16px 16px;
   vertical-align: middle;
   background: rgba(255, 255, 255, 0.2) url(../img/loupe.svg) no-repeat;
@@ -436,7 +436,7 @@ html {
   font-size: 13px;
   line-height: 24px;
   text-decoration: none;
-  color: #323232; 
+  color: #323232;
 }
 .cart {
   display: inline-block;
@@ -610,12 +610,12 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   border-radius: 23px;
 }
 .baner-left {
-  margin-right: auto; 
+  margin-right: auto;
   background: #760221 url(../img/raspberry-background.jpg) no-repeat;
   background-position: center;
 }
 .baner-right {
-  margin-left: auto; 
+  margin-left: auto;
   background: #7b5241 url(../img/chocolate-background.jpg) no-repeat;
   background-position: center;
 }
@@ -679,7 +679,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   content: "";
   left: 13px;
   padding: 31px;
-  background: url(../img/hit-image.svg) no-repeat; 
+  background: url(../img/hit-image.svg) no-repeat;
 }
 .catalog-item img {
   display: block;
@@ -732,7 +732,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   color: #ffbc9e;
   box-shadow: inset 0 -1px 0 0 rgba( 255, 188, 158, 0.3);
 }
- 
+
 /*Особенности*/
 .features {
   margin-bottom: 38px;
@@ -889,7 +889,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .contact {
   position: relative;
   width: 302px;
-  margin-left: auto; 
+  margin-left: auto;
   padding: 30px 26px;
   color: #323232;
   background: #fdfefe;
@@ -995,7 +995,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .modal-form .btn {
   padding: 11px 22px;
   align-self: flex-end;
-  border-radius: 23px; 
+  border-radius: 23px;
   cursor: pointer;
 }
 .visible {
@@ -1004,7 +1004,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
-  }  
+  }
   70% {
     transform: translateY(30px);
   }
@@ -1091,7 +1091,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .social-btn.vk {
   background: url(../img/vk-logo.svg) no-repeat center;
 }
-.footer-info {  
+.footer-info {
   margin: 0;
   margin-top: 32px;
   padding: 0 16px;
@@ -1133,7 +1133,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   padding: 8px 16px;
   color: rgb(50, 50, 50);
   background: rgba(255, 255, 255, 1);
-  
+
 }
 .cart.buy:focus {
   outline: none;
@@ -1257,7 +1257,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
   color: #ffffff;
 }
 .prev-position {
-  padding-right: 8px; 
+  padding-right: 8px;
 }
 .prev-position::after {
   content: " »";
@@ -1301,7 +1301,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 }
 .select-style {
   width: 193px;
-  border-radius: 18px; 
+  border-radius: 18px;
   overflow: hidden;
 }
 .filter-popular select {
@@ -1331,7 +1331,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .range-wrapper {
   position: relative;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 18px; 
+  border-radius: 18px;
 }
 .range-band {
   width: 179px;
@@ -1423,7 +1423,7 @@ input[id="btn-3"]:checked ~ .slider-inner .slides-3 {
 .filter-additive-control label {
   position: relative;
   padding-left: 30px;
-  margin-right: 23px;  
+  margin-right: 23px;
   line-height: 18px;
   font-weight: 500;
   cursor: pointer;
