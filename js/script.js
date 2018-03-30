@@ -2,7 +2,6 @@ var link = document.querySelector(".popup");
 var overlay = document.querySelector(".modal-overlay");
 var modal = document.querySelector(".modal");
 var close = modal.querySelector(".close");
-
 var login = modal.querySelector(".input-text");
 var email = modal.querySelector(".input-email");
 var text = modal.querySelector(".textarea");
@@ -28,4 +27,4 @@ modal.addEventListener("submit", function (evt) {
   modal.offsetWidth = modal.offsetWidth;
   modal.classList.add("modal-error");
   }
- });
+});
