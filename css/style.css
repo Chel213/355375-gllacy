@@ -298,7 +298,8 @@ html {
   overflow: hidden;
 }
 
-.submenu-catalog-item a:hover {
+.submenu-catalog-item a:hover,
+.submenu-catalog-item a:focus {
   background-color: #fbded7;
 }
 .submenu-catalog-item {
