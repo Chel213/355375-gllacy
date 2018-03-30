@@ -234,7 +234,7 @@ html {
   padding: 0;
   padding-top: 14px;
 }
-.site-nav-item a {
+.site-nav-item > a {
   position: relative;
   display: block;
   padding: 7px 14px;
@@ -244,7 +244,7 @@ html {
   text-decoration: none;
   border-radius: 16px;
 }
-.site-nav-item a:after {
+.site-nav-item > a:after {
   position: absolute;
   top: 24px;
   display: block;
@@ -298,30 +298,32 @@ html {
   overflow: hidden;
 }
 
-.submenu-catalog-item:hover {
+.submenu-catalog-item a:hover {
   background-color: #fbded7;
 }
 .submenu-catalog-item {
-  padding: 8px 6px;
+  padding: 0;
 }
 .submenu-catalog-item:last-child {
-  padding-bottom: 12px;
+  padding-bottom: 4px;
 }
 .submenu-catalog-item.novelty {
-  padding: 11px 6px;
+  padding: 0;
   border-bottom: 1px solid rgba(53, 53, 53, 0.2);
 }
 .submenu-catalog-item.novelty a {
+  padding: 11px 20px;
   font-weight: 700;
 }
-.submenu-catalog-item:active {
+.submenu-catalog-item a:active {
   background-color: #f6b5a5;
 }
 .submenu-catalog-item.current {
   background-color: #d07058;
 }
 .submenu-catalog-item a {
-  padding: 0 14px;
+  display: block;
+  padding: 8px 20px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
